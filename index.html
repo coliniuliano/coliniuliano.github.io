@@ -3,14 +3,18 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div>
   {% for project in site.projects %}
-  <article class="post">
-    <h1 class="post-title">
+  <article class="page">
+    <h1 class="title">
       <a href="{{ site.baseurl }}{{ project.url }}">
         {{ project.title }}
       </a>
     </h1>
+
+    {% if project.image %}
+    <img class="thumbnail" src="{{ project.image }}" alt="{{ project.title }}" />
+    {% endif %}
 
     {% assign excerpt = project.content | split: site.excerpt_separator %}
     {{ excerpt[0] }}
