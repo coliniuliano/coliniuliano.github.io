@@ -12,7 +12,8 @@ title: Home
       </a>
     </h1>
 
-    {{ project.content }}
+    {% assign excerpt = project.content | split: site.excerpt_separator %}
+    {{ excerpt[0] }}
   </article>
   {% endfor %}
 </div>

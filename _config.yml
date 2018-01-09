@@ -6,6 +6,9 @@ title:               Colin Iuliano
 tagline:             Programmer, Tinkerer, Nerd
 url:                 http://coliniuliano.com
 baseurl:             ""
+
+# Custom configuration
+excerpt_separator:   "<!-- more -->"
 collections:
   projects:
     output:          true
