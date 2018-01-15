@@ -1,6 +1,15 @@
 ---
 layout: page
 title: Project Two
+image: assets/img/chromecast2.jpg
 ---
 
-Project 2 content
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a malesuada metus. Vestibulum varius ultrices metus a mollis. Aliquam magna mauris, pellentesque non fringilla et, elementum sit amet massa. Praesent consequat ultricies ex, quis rhoncus elit rhoncus vel. Nullam pulvinar elementum tortor sed sollicitudin. Ut risus sem, pellentesque at dictum in, porttitor et felis. Sed egestas mauris ut pretium blandit. Etiam auctor diam et leo tristique consequat. Nam pretium ante metus, id volutpat purus malesuada at.<!-- more -->
+
+Fusce aliquam varius congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi elit ante, sodales eget mi quis, tincidunt auctor velit. Morbi at magna leo. Quisque sit amet consequat elit. Sed velit nisi, tristique ut aliquet in, vulputate ut massa. Duis dignissim, metus dapibus feugiat ultrices, velit urna hendrerit elit, a fringilla turpis ex eu ante. Phasellus sodales dui ante, id suscipit lorem tempor ut. Mauris eget dui id orci placerat hendrerit vel eu urna. Maecenas varius, magna eget laoreet varius, libero nisi tincidunt odio, vitae consequat massa odio sed leo. Curabitur a tempor odio. Vivamus a dui pulvinar, tempor turpis eget, semper tortor. Vivamus blandit non nisi faucibus malesuada. Nulla sagittis sollicitudin viverra. In dictum ligula libero, a elementum elit vestibulum id. Proin nec fringilla eros.
+
+Maecenas ultrices euismod quam. Nam eget felis ut tellus rhoncus ultrices eget ac est. Phasellus sed justo ac nulla porta posuere sit amet non quam. Ut vehicula sem at augue condimentum tincidunt. Nam porttitor rhoncus purus eu rhoncus. Quisque nec metus at nisi faucibus fermentum vitae vel erat. Integer ultrices eros vitae leo ullamcorper, in placerat lectus aliquam.
+
+Nam commodo volutpat ex, quis varius odio maximus id. In hendrerit nibh mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur aliquet venenatis magna vel pharetra. Etiam nibh lacus, aliquet et blandit quis, sodales finibus massa. Nullam in fermentum felis. Etiam consectetur feugiat augue vel porttitor.
+
+Pellentesque fringilla elit vel dolor porta suscipit. Suspendisse varius quam ultrices, consequat magna ac, euismod quam. Nunc ut mauris consectetur, molestie leo non, efficitur tortor. Pellentesque rutrum finibus lacinia. Donec dictum nisi id nunc porttitor commodo. Sed tempus dui quam, sed elementum diam maximus eget. Aliquam fringilla et mauris at bibendum. Cras rutrum imperdiet accumsan. Morbi metus elit, tincidunt quis nisl eget, facilisis pellentesque arcu. Cras mi ipsum, tincidunt eget pellentesque at, molestie at arcu. Suspendisse potenti. In rutrum nunc a sem cursus ullamcorper. Aliquam eleifend, lorem et fringilla ullamcorper, velit turpis dapibus libero, in scelerisque turpis velit at libero. Aliquam tempus, nisl vitae semper vulputate, ipsum elit molestie odio, in rhoncus mauris lorem ac nisi.

@@ -6,14 +6,16 @@ title: Home
 <div>
   {% for project in site.projects %}
   <article class="page">
-    <h1 class="title">
+    <h3 class="title">
       <a href="{{ site.baseurl }}{{ project.url }}">
         {{ project.title }}
       </a>
-    </h1>
+    </h3>
 
     {% if project.image %}
-    <img class="thumbnail" src="{{ project.image }}" alt="{{ project.title }}" />
+    <a href="{{ site.baseurl }}{{ project.url }}">
+      <img class="thumbnail" src="{{ project.image }}" alt="{{ project.title }}" />
+    </a>
     {% endif %}
 
     {% assign excerpt = project.content | split: site.excerpt_separator %}
