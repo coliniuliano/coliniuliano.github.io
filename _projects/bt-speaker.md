@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Project 1
-image: assets/img/chromecast.jpg
+title: True Wireless Bluetooth Speaker
+image: assets/btspeaker/Untitled.png
+status: In-Progress
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices elit et felis sollicitudin ornare. Nullam eget pretium mauris. Cras pharetra vel risus ac faucibus. Nulla quis dapibus elit. Ut consectetur dapibus lacus at dictum. Praesent porta leo quis tempor tempus. Morbi a tincidunt ex, ac volutpat leo. Nunc tristique arcu risus, ut vestibulum libero faucibus a. Quisque imperdiet ultrices massa et viverra.<!-- more -->

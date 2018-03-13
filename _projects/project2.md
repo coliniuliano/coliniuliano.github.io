@@ -2,6 +2,7 @@
 layout: page
 title: Project Two
 image: assets/img/chromecast2.jpg
+status: Stalled
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a malesuada metus. Vestibulum varius ultrices metus a mollis. Aliquam magna mauris, pellentesque non fringilla et, elementum sit amet massa. Praesent consequat ultricies ex, quis rhoncus elit rhoncus vel. Nullam pulvinar elementum tortor sed sollicitudin. Ut risus sem, pellentesque at dictum in, porttitor et felis. Sed egestas mauris ut pretium blandit. Etiam auctor diam et leo tristique consequat. Nam pretium ante metus, id volutpat purus malesuada at.<!-- more -->
