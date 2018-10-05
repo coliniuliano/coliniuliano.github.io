@@ -12,9 +12,10 @@ title: Home
       </a>
     </h3>
 
-    {% if project.status %}
-    <span class="progress-pill pill-{{ project.status | downcase }}">{{ project.status }}</span>
-    {% endif %}
+    {% for status in project.status %}
+    {% assign status-class = status | split: ":" | last %}
+    <span class="progress-pill pill-{{ status-class | downcase | strip }}">{{ status }}</span>
+    {% endfor %}
 
     {% if project.image %}
     <a href="{{ site.baseurl }}{{ project.url }}">
