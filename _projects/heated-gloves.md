@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Heated Ski/Snowboard Gloves
-image: assets/heatedgloves/chromecast2.jpg
+#imageroot: assets/heatedgloves/chromecast2.jpg
 status: In-Progress
 ---
 
-After many years of frozen fingers on the ski hills, it became a necessity to investigate solutions.  With commercial heated gloves costing around $100, it made sense to investigate alternative custom solutions.<!-- more -->
+<!-- more -->
 
 Fusce aliquam varius congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi elit ante, sodales eget mi quis, tincidunt auctor velit. Morbi at magna leo. Quisque sit amet consequat elit. Sed velit nisi, tristique ut aliquet in, vulputate ut massa. Duis dignissim, metus dapibus feugiat ultrices, velit urna hendrerit elit, a fringilla turpis ex eu ante. Phasellus sodales dui ante, id suscipit lorem tempor ut. Mauris eget dui id orci placerat hendrerit vel eu urna. Maecenas varius, magna eget laoreet varius, libero nisi tincidunt odio, vitae consequat massa odio sed leo. Curabitur a tempor odio. Vivamus a dui pulvinar, tempor turpis eget, semper tortor. Vivamus blandit non nisi faucibus malesuada. Nulla sagittis sollicitudin viverra. In dictum ligula libero, a elementum elit vestibulum id. Proin nec fringilla eros.
 

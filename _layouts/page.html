@@ -1,8 +1,21 @@
 ---
-layout: default
+layout: default-gallery
 ---
 
 <article class="page">
   <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.gallery %}
+    <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ page.gallery }}/thumb.png" alt="{{ page.title }}" />
+  {% endif %}
   {{ content }}
+
+  
+  {% if page.gallery %}
+  ### Gallery ###
+  {% for image in site.data.galleries[page.gallery] %}
+  <a href="{{ site.baseurl }}/assets/{{ page.gallery }}/{{ image.file }}" data-lightbox="gallery">
+    <img class="gallery-thumbnail" src="{{ site.baseurl }}.assets/{{ page.gallery }}/thumbs/{{ image.file }}" />
+  </a>
+  {% endfor %}
+  {% endif %}
 </article>

@@ -13,18 +13,18 @@ title: Home
     </h3>
 
     {% for status in project.status %}
-    {% assign status-class = status | split: ":" | last %}
-    <span class="progress-pill pill-{{ status-class | downcase | strip }}">{{ status }}</span>
+    {% assign status-class = status | split: ":" | last | downcase | strip %}
+    <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
     {% endfor %}
 
-    {% if project.image %}
+    {% if project.gallery %}
     <a href="{{ site.baseurl }}{{ project.url }}">
-      <img class="thumbnail" src="{{ project.image }}" alt="{{ project.title }}" />
+      <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ project.gallery }}/thumb.png" alt="{{ project.title }}" />
     </a>
     {% endif %}
 
-    {% assign excerpt = project.content | split: site.excerpt_separator %}
-    {{ excerpt[0] }}
+    {% assign excerpt = project.content | split: site.excerpt_separator | first %}
+    {{ excerpt }}
   </article>
   {% endfor %}
 </div>
