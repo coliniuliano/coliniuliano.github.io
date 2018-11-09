@@ -18,11 +18,11 @@
             <h1 class="page-title">{{ page.title }}</h1>
             {%- for status in page.status %}
             {%- assign status-class = status | split: ":" | last | downcase | strip %}
-            <span class="progress-pill pill-{{- status-class -}}">{{ status }}</span>
+            <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
             {%- endfor -%}
 
             {%- if page.image %}
-            <img class="thumbnail" src="{{- site.baseurl -}}/assets/{{- page.image -}}" alt="{{- page.title -}}" />
+            <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ page.image }}" alt="{{ page.title }}" />
             {%- endif %}
             {{ content }}
           </article>

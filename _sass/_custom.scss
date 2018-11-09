@@ -3,36 +3,50 @@
 // Context-specific classes for custom styling
 
 .progress-pill {
-    color: #fff;
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1;
-    border-radius: .2rem;
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    margin-right: 0.5rem;
+  color: #fff;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1;
+  border-radius: .2rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  margin-right: 0.5rem;
 }
 
 .pill-in-progress {
-    background-color: #007bff;
-    border-color: #007bff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .pill-completed {
-    background-color: #28a745;
-    border-color: #28a745;
+  background-color: #28a745;
+  border-color: #28a745;
 }
 
 .pill-cancelled {
-    background-color: #dc3545;
-    border-color: #dc3545;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .pill-stalled {
-    background-color: #6c757d;
-    border-color: #6c757d;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.thumbnail {
+  float: left;
+  margin: 0 1rem 0 0;
+  width: 10rem;
+  height: 10rem;
+}
+
+.gallery-thumbnail {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  width: 10rem;
+  height: 10rem;
 }
