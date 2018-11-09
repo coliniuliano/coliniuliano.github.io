@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%- include head.html %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+  </head>
+  <body>
+    <div class="container content">
+      <header class="masthead">
+        <h2 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h2>
+      </header>
+
+      <main>
+          <article class="page">
+            <h1 class="page-title">{{ page.title }}</h1>
+            {%- for status in page.status %}
+            {%- assign status-class = status | split: ":" | last | downcase | strip %}
+            <span class="progress-pill pill-{{- status-class -}}">{{ status }}</span>
+            {%- endfor -%}
+
+            {%- if page.image %}
+            <img class="thumbnail" src="{{- site.baseurl -}}/assets/{{- page.image -}}" alt="{{- page.title -}}" />
+            {%- endif %}
+            {{ content }}
+          </article>
+      </main>
+
+      <footer>
+        <small>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<div class="gallery">
+  {%- for image in site.data.galleries[include.gallery] %}
+  <a href="{{ site.baseurl }}/assets/{{ include.gallery }}/{{ image.file }}" data-lightbox="{{ include.gallery }}" {% if image.description %} data-title="{{ image.description }}" {% endif %}>
+    <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ include.gallery }}/thumbs/{{ image.file }}" />
+  </a>
+  {%- endfor %}
+</div>

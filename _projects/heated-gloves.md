@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-gallery
 title: Heated Ski/Snowboard Gloves
 #imageroot: assets/heatedgloves/chromecast2.jpg
 status: In-Progress

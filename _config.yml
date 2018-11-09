@@ -3,11 +3,12 @@ permalink:           pretty
 
 # Setup
 title:               Colin Iuliano
-tagline:             Software Developer, Hardware Tinkerer, Huge Nerd
+tagline:             Software Developer, Hardware Tinkerer
 url:                 http://coliniuliano.com
 baseurl:             ""
 
 # Custom configuration
+analytics_id:        UA-129012824-1
 excerpt_separator:   "<!-- more -->"
 collections:
   projects:

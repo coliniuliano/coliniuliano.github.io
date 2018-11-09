@@ -1,29 +1,26 @@
 ---
 layout: default
-title: Home
 ---
 
 <div>
   {% for project in site.projects %}
   <article class="page">
     <h3 class="title">
-      <a href="{{ site.baseurl }}{{ project.url }}">
-        {{ project.title }}
-      </a>
+      <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
     </h3>
 
-    {% for status in project.status %}
-    {% assign status-class = status | split: ":" | last | downcase | strip %}
+    {%- for status in project.status %}
+    {%- assign status-class = status | split: ":" | last | downcase | strip %}
     <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
-    {% endfor %}
+    {%- endfor -%}
 
-    {% if project.gallery %}
+    {%- if project.image %}
     <a href="{{ site.baseurl }}{{ project.url }}">
-      <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ project.gallery }}/thumbs/main.png" alt="{{ project.title }}" />
+      <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ project.image }}" alt="{{ project.title }}" />
     </a>
-    {% endif %}
+    {%- endif %}
 
-    {% assign excerpt = project.content | split: site.excerpt_separator | first %}
+    {%- assign excerpt = project.content | split: site.excerpt_separator | first %}
     {{ excerpt }}
   </article>
   {% endfor %}
