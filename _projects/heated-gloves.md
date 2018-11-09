@@ -1,13 +1,9 @@
 ---
-layout: page-gallery
 title: Heated Ski/Snowboard Gloves
-#imageroot: assets/heatedgloves/chromecast2.jpg
 status: In-Progress
 ---
 
-<!-- more -->
-
-Fusce aliquam varius congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi elit ante, sodales eget mi quis, tincidunt auctor velit. Morbi at magna leo. Quisque sit amet consequat elit. Sed velit nisi, tristique ut aliquet in, vulputate ut massa. Duis dignissim, metus dapibus feugiat ultrices, velit urna hendrerit elit, a fringilla turpis ex eu ante. Phasellus sodales dui ante, id suscipit lorem tempor ut. Mauris eget dui id orci placerat hendrerit vel eu urna. Maecenas varius, magna eget laoreet varius, libero nisi tincidunt odio, vitae consequat massa odio sed leo. Curabitur a tempor odio. Vivamus a dui pulvinar, tempor turpis eget, semper tortor. Vivamus blandit non nisi faucibus malesuada. Nulla sagittis sollicitudin viverra. In dictum ligula libero, a elementum elit vestibulum id. Proin nec fringilla eros.
+Fusce aliquam varius congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi elit ante, sodales eget mi quis, tincidunt auctor velit. Morbi at magna leo. Quisque sit amet consequat elit. Sed velit nisi, tristique ut aliquet in, vulputate ut massa. Duis dignissim, metus dapibus feugiat ultrices, velit urna hendrerit elit, a fringilla turpis ex eu ante. Phasellus sodales dui ante, id suscipit lorem tempor ut. Mauris eget dui id orci placerat hendrerit vel eu urna. Maecenas varius, magna eget laoreet varius, libero nisi tincidunt odio, vitae consequat massa odio sed leo. Curabitur a tempor odio. Vivamus a dui pulvinar, tempor turpis eget, semper tortor. Vivamus blandit non nisi faucibus malesuada. Nulla sagittis sollicitudin viverra. In dictum ligula libero, a elementum elit vestibulum id. Proin nec fringilla eros.<!-- more -->
 
 Maecenas ultrices euismod quam. Nam eget felis ut tellus rhoncus ultrices eget ac est. Phasellus sed justo ac nulla porta posuere sit amet non quam. Ut vehicula sem at augue condimentum tincidunt. Nam porttitor rhoncus purus eu rhoncus. Quisque nec metus at nisi faucibus fermentum vitae vel erat. Integer ultrices eros vitae leo ullamcorper, in placerat lectus aliquam.
 

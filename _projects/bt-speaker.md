@@ -1,7 +1,6 @@
 ---
-layout: page-gallery
-title: uuuukukukuk
-image: bt-speaker/thumbs/250.png
+title: Bluetooth "True Wireless Stereo" Speakers
+image: bt-speaker/thumbs/1.jpg
 status: In-Progress
 ---
 
@@ -21,4 +20,4 @@ Blah blah
 * qweryy
 
 ### Gallery ###
-{% include gallery.html gallery="bt-speaker" %}
+{% include gallery.html id="bt-speaker" %}

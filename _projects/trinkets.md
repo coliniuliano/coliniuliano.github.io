@@ -1,7 +1,5 @@
 ---
-layout: page-gallery
 title: Trinkets (ESP8266)
-#imageroot: assets/heatedgloves/chromecast2.jpg
 status: ["v1: Completed", "v2: In-Progress"]
 ---
 
