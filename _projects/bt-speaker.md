@@ -1,6 +1,6 @@
 ---
 title: Bluetooth "True Wireless Stereo" Speakers
-image: bt-speaker/thumbs/1.jpg
+image: bt-speaker/thumbs/square-front.jpg
 status: In-Progress
 ---
 

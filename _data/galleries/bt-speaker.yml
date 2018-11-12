@@ -1,10 +1,20 @@
-- file: 1.jpg
-  description: Square speaker complete
-- file: 800.png
-  description: Bubblegum
-- file: 800.png
-  description: Bubblegum
-- file: 800.png
-  description: Bubblegum
-- file: 800.png
-  description: Bubblegum
+- file: square-front.jpg
+  description: Finished square speaker
+- file: speakers.jpg
+  description: All of these were tested and were not good enough
+- file: square-wood.jpg
+  description: Square boxes before finishing or speaker
+- file: square-installed.jpg
+  description: Square speaker mounted
+- file: round-laminated.jpg
+  description: Round boxes after attaching laminate
+- file: round-back-rendered.png
+  description: Round box rendering (back)
+- file: rendered-back.png
+  description:  PCB rendering (back)
+- file: rendered-front.png
+  description: PCB rendering (front)
+- file: pcb-back.jpg
+  description: Rev 1 PCB (back)
+- file: pcb-front.jpg
+  description: Rev 1 PCB (front)
