@@ -1,0 +1,6 @@
+- file: rev5-model-side-box.png
+  description: Rendering (top in case)
+- file: rev5-model-bottom.png
+  description: PCB rendering (bottom)
+- file: rev5-model-top-box.png
+  description: PCB rendering (top)

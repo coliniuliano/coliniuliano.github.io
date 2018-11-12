@@ -1,0 +1,12 @@
+- file: render-angle.png
+  description: Rendered (top)
+- file: render-bottom.png
+  description: Rendered (bottom)
+- file: render-case.png
+  description: Rendered (top in case)
+- file: pcb-top.png
+  description: PCB design software (top)
+- file: testing.jpg
+  description: Finished PCB testing
+- file: finished-bottom.jpg
+  description: Finished PCB bottom

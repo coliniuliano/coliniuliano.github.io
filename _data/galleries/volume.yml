@@ -1,0 +1,8 @@
+- file: led-on.jpg
+  description: LED on
+- file: led-off.jpg
+  description: LED off
+- file: inside.jpg
+  description: Disassembled
+- file: side.jpg
+  description: Side view
