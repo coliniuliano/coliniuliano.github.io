@@ -6,7 +6,11 @@
   description: Rendered (top in case)
 - file: pcb-top.png
   description: PCB design software (top)
-- file: testing.jpg
-  description: Finished PCB testing
 - file: finished-bottom.jpg
   description: Finished PCB bottom
+- file: finished-top-case-front.jpg
+  description: Finished PCB in case (front)
+- file: finished-top-case-back.jpg
+  description: Finished PCB in case (back)
+- file: finished-case-front.jpg
+  description: Finished case (front)

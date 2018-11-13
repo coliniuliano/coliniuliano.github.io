@@ -4,3 +4,11 @@
   description: PCB rendering (bottom)
 - file: rev5-model-top-box.png
   description: PCB rendering (top)
+- file: rev5-pcb-case.jpg
+  description: PCB installed in case
+- file: finished-case-front.jpg
+  description: Finished case (front)
+- file: finished-case-side.jpg
+  description: Finished case (side)
+- file: rev5-pcb-bottom.jpg
+  description: PCB bottom

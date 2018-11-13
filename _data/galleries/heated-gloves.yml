@@ -1,0 +1,12 @@
+- file: pcb-adjustments.jpg
+  description: Modifications to original PCB
+- file: pcb-design.png
+  description: Custom PCB design
+- file: pcb-cnc-attempt.jpg
+  description: First attempt to CNC a custom PCB
+- file: pcb-installed.jpg
+  description: Custom PCB installed
+- file: finished-glove-base.jpg
+  description: Finished glove (base)
+- file: finished-glove-tip.jpg
+  description: Finished glove (tip)

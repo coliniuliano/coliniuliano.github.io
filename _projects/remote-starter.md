@@ -1,6 +1,6 @@
 ---
 title: AWS IoT Remote Starter
-image: remote-starter/thumbs/finished-bottom.jpg
+image: remote-starter/thumbs/finished-top-case-front.jpg
 status: In-Progress
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Trinkets (ESP8266)
-image: trinkets/thumbs/rev5-model-side-box.png
+image: trinkets/thumbs/rev5-pcb-bottom.jpg
 status: ["v1: Completed", "v2: In-Progress"]
 ---
 
