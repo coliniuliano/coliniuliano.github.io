@@ -4,14 +4,14 @@
 
     <title>
       {%- if page.title -%}
-        {{- page.title }} &middot; {{ site.title -}}
+        {{ page.title }} &middot; {{ site.title }}
       {%- else -%}
-        {{- site.title }} &middot; {{ site.tagline -}}
+        {{ site.title }} &middot; {{ site.tagline }}
       {%- endif -%}
     </title>
-    
+
     {% if site.analytics_id -%}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{- site.analytics_id -}}"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics_id }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -20,5 +20,5 @@
     </script>
     {%- endif %}
 
-    <link rel="stylesheet" href="{{- site.baseurl -}}/styles.css">
-    <link rel="shortcut icon" href="{{- site.baseurl -}}/favicon.ico">
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
