@@ -5,8 +5,8 @@
 .page {
   margin-bottom: 4em;
 
-  li + li {
-    margin-top: .25rem;
+  li {
+    list-style-position: inside;
   }
 
   // Meta data line below title
@@ -21,7 +21,7 @@
   .title a {
     color: #303030;
   }
-  
+
   .title {
     margin-top: 0;
     clear: both;

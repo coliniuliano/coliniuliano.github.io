@@ -10,7 +10,5 @@ Fusce ac nulla diam. Quisque porta commodo felis, vel bibendum dui porttitor ac.
 
 Etiam nunc augue, auctor vitae molestie quis, ultrices quis neque. Suspendisse et rutrum magna, vitae rhoncus eros. Quisque vestibulum turpis ut nisi malesuada, non viverra urna posuere. Pellentesque lobortis sem nec elit interdum faucibus. Sed ultricies lorem sed pretium posuere. Sed malesuada tellus at arcu vestibulum, ut eleifend est semper. Donec sit amet vehicula nisl. Mauris eget enim tincidunt lacus porttitor vehicula. Curabitur porta tortor ac enim tempus, ut porttitor sapien pulvinar. Pellentesque lacinia bibendum purus nec finibus. Phasellus viverra magna sit amet enim vestibulum, nec tempor libero tincidunt. Vivamus sodales est nec lacinia varius. Mauris libero quam, egestas in diam ac, luctus porta nisl.
 
-
-
 ### Gallery ###
 {% include gallery.html id="volume" %}
