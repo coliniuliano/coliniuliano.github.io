@@ -1,5 +1,9 @@
 <div class="gallery">
-  {%- for image in site.data.galleries[include.id] %}
+  {%- assign gallery-id = include.id -%}
+  {%- if include.gallery -%}
+  {%- assign gallery-id = gallery-id | append: "-" | append: include.gallery -%}
+  {%- endif -%}
+  {%- for image in site.data.galleries[gallery-id] %}
   <a href="{{ site.baseurl }}/assets/{{ include.id }}/{{ image.file }}" data-lightbox="{{ include.id }}" {% if image.description %} data-title="{{ image.description }}" {% endif %}>
     <img class="gallery-thumbnail" src="{{ site.baseurl }}/assets/{{ include.id }}/thumbs/{{ image.file }}" />
   </a>

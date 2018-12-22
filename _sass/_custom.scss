@@ -43,6 +43,12 @@
   height: 10rem;
 }
 
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .gallery-thumbnail {
   float: left;
   margin: 0 1rem 1rem 0;
