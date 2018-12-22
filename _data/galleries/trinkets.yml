@@ -12,3 +12,5 @@
   description: Finished case (side)
 - file: rev5-pcb-bottom.jpg
   description: PCB bottom
+- file: iot-dashboard.png
+  description: AWS IoT Dashboard
