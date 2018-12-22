@@ -1,0 +1,10 @@
+- file: speakers.jpg
+  description: All of these were tested and were not good enough
+- file: rendered-back.png
+  description:  PCB rendering (back)
+- file: rendered-front.png
+  description: PCB rendering (front)
+- file: pcb-back.jpg
+  description: Rev 1 PCB (back)
+- file: pcb-front.jpg
+  description: Rev 1 PCB (front)
