@@ -43,7 +43,7 @@
   height: 10rem;
 }
 
-.gallery:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;

@@ -24,7 +24,10 @@
             {%- if page.image %}
             <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ page.image }}" alt="{{ page.title }}" />
             {%- endif %}
-            {{ content }}
+            <div class="clearfix">
+              {{ content | split: site.excerpt_separator | first }}
+            </div>
+            {{ content | split: site.excerpt_separator | last }}
           </article>
       </main>
 

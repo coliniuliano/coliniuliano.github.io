@@ -10,7 +10,7 @@ Trinkets are a low-power wireless development platform based on the ESP8266 Wifi
 * Espressif ESP8266 Wifi Module
 * Microchip MCP73831 Li-Ion Charge Controller with Load Sharing
 * Custom PCB with 3D rendering (Altium Designer)
-* AWS IoT Integration
+* AWS IoT integration
 * Flexible and simple to program
 * Fits Hammond 1551H enclosure
 

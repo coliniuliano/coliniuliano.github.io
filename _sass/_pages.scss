@@ -3,7 +3,8 @@
 // Each page is wrapped in `.page` and is only used on the page layout.
 
 .page {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  overflow: auto;
 
   li {
     list-style-position: inside;
