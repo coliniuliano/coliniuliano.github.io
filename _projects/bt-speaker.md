@@ -28,9 +28,10 @@ The hardware for this project is quite simple since the CSRA64215 module is an a
 While the speaker does currently work, some assumptions about low-power modes were incorrect (Boost Disable Shifter circuit).  As a result, the speaker does not properly disable the amplifier when not in use, leading to an idle current of around 30mA.  Revision 2 will address this sole remaining issue.
 
 ### Schematic ###
+Warning: this schematic does not properly disable the amplifier during power-down.
 [![Schematic]({{ site.baseurl }}/assets/bt-speaker/schematic.png "Schematic")]({{ site.baseurl }}/assets/bt-speaker/schematic.pdf)
 
 ## Woodworking ##
-There are two variations of this speaker.  The round variation is made of 7 layers of MDF and covered with an oak laminate.  The square variation is made of solid oak with an espresso stain.  To ensure perfect fits, many templates were 3D-printed to assist with cutting.  Each speaker design was thoroughly 3D-modelled to guarantee adequate volume and seamless integration.
+There are two variations of this speaker.  The round variation is made of 7 layers of MDF and covered with an oak laminate.  The rounded speaker did not turn out that nice, so it got scrapped.  The square variation is made of solid oak with contrasting espresso stain.  To ensure perfect fits, many templates were 3D-printed to assist with cutting.  Each speaker design was thoroughly 3D-modelled to guarantee adequate volume and seamless integration.
 
 {% include gallery.html id="bt-speaker" gallery="wood" %}
