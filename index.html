@@ -8,16 +8,16 @@
       <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
     </h2>
 
-    {%- for status in project.status %}
-    {%- assign status-class = status | split: ":" | last | downcase | strip %}
-    <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
-    {%- endfor -%}
-
     {%- if project.image %}
     <a href="{{ site.baseurl }}{{ project.url }}">
       <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ project.image }}" alt="{{ project.title }}" />
     </a>
     {%- endif %}
+
+    {%- for status in project.status %}
+    {%- assign status-class = status | split: ":" | last | downcase | strip %}
+    <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
+    {%- endfor -%}
 
     {%- assign excerpt = project.content | split: site.excerpt_separator | first %}
     {{ excerpt }}
