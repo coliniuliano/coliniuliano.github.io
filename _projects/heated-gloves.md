@@ -22,5 +22,4 @@ While powered gloves are the main focus of this project, a control box was also 
 // power duration calculations
 // pcb design and such
 
-### Gallery ###
 {% include gallery.html id="heated-gloves" %}

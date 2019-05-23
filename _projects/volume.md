@@ -19,5 +19,4 @@ In early 2017, I purchased several new tools to start basic woodworking projects
 ## Schematic ##
 [![Schematic]({{ site.baseurl }}/assets/volume/schematic.png "Schematic")]({{ site.baseurl }}/assets/volume/schematic.pdf)
 
-### Gallery ###
 {% include gallery.html id="volume" %}
