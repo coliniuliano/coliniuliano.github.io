@@ -1,7 +1,7 @@
 ---
 title: Heated Gloves
 image: heated-gloves/thumbs/finished-glove-tip.jpg
-status: ["v1: Completed", "v2: Stalled"]
+status: "Completed"
 ---
 
 Providing up to 15W of heat, these carbon fiber wrapped gloves were constructed to withstand and combat the harsh Canadian ski season.  A custom waterproof control box provides 3 levels of warming power for comfortable hands in any weather.<!-- more -->

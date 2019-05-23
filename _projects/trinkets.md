@@ -1,7 +1,7 @@
 ---
 title: Trinkets (ESP8266)
 image: trinkets/thumbs/rev5-pcb-bottom.jpg
-status: ["v1: Completed", "v2: In-Progress"]
+status: "Completed"
 ---
 
 Trinkets are a low-power wireless development platform based on the ESP8266 Wifi module.  With out-of-the-box AWS IoT integration, Trinkets enable low-cost home monitoring.  Each unit is equipped with a magnet sensor, and comes configured as a door sensor by default.  An expansion port offers endless monitoring opportunities.<!-- more -->
