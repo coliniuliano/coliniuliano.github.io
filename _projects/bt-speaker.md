@@ -4,7 +4,7 @@ image: bt-speaker/thumbs/square-front.jpg
 status: In-Progress
 ---
 
-Designed to experiment with True Wireless Stereo technology, these speakers feature the CSRA62415 audio module and BMR12 drivers wrapped in a modern oak enclosure.  Engineered for high-quality audio in a small form-factor, the signal path remains digital from the Bluetooth/USB input to the amplifier output.  Pairing two speakers together provides fully wireless stereo sound.<!-- more -->
+Designed to experiment with True Wireless Stereo technology, these speakers feature the CSRA62415 audio module and BMR12 drivers wrapped in a modern oak enclosure.  Engineered for high-quality audio in a small form-factor, the signal path remains digital from the Bluetooth/USB input to the amplifier output.  Two speakers can be paired together to provide fully wireless stereo sound.<!-- more -->
 
 ## Features ##
 * Qualcomm CSRA64215 Bluetooth Audio Module
