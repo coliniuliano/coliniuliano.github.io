@@ -5,12 +5,11 @@
   {% for project in site.projects %}
   <article class="page">
     <h2 class="title">
-      <!-- TODO: <a href="{{ post.url | relative_url }}"> -->
-      <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     </h2>
 
     {%- if project.image %}
-    <a href="{{ site.baseurl }}{{ project.url }}">
+    <a href="{{ project.url | relative_url }}">
       <img class="thumbnail" src="{{ site.baseurl }}/assets/{{ project.image }}" alt="{{ project.title }}" />
     </a>
     {%- endif %}

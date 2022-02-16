@@ -2,7 +2,7 @@
 title: Colin Iuliano
 tagline: Software Developer, Hardware Tinkerer
 url: http://coliniuliano.com
-paginate: 0
+# paginate: 0
 baseurl: ""
 permalink: pretty
 
@@ -13,10 +13,10 @@ sass:
   style: :compressed
 
 # Gems
-plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
+# plugins:
+#   - jekyll-gist
+#   - jekyll-paginate
+#   - jekyll-seo-tag
 
 # Optimize Jekyll
 exclude:
@@ -34,11 +34,8 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-# Tracking
-# TODO: explore this code ga_analytics: UA-129012824-1
-
 # Custom configuration
-analytics_id: UA-129012824-1
+ga_analytics: UA-129012824-1
 excerpt_separator: "<!-- more -->"
 collections:
   projects:

@@ -9,27 +9,5 @@
   {%- endif -%}
 </title>
 
-{% if site.analytics_id -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics_id }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{- site.analytics_id -}}');
-</script>
-{%- endif %}
-
 <link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
 <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
-<!-- TODO EXPLORE THIS
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
-  {% seo title=false %}
--->
-</head>
