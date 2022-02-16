@@ -19,5 +19,17 @@
 </script>
 {%- endif %}
 
-<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link rel="stylesheet" href="{{ 'styles.css' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+<!-- TODO EXPLORE THIS
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  {% seo title=false %}
+-->
+</head>

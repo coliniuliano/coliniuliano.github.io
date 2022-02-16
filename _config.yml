@@ -1,48 +1,59 @@
-# Permalinks
-permalink:           pretty
-
 # Setup
-title:               Colin Iuliano
-tagline:             Software Developer, Hardware Tinkerer
-url:                 http://coliniuliano.com
-baseurl:             ""
-
-# Custom configuration
-analytics_id:        UA-129012824-1
-excerpt_separator:   "<!-- more -->"
-collections:
-  projects:
-    output:          true
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "default"
-
-  -
-    scope:
-      path:         "_projects"
-    values:
-      layout:       "page-gallery"
+title: Colin Iuliano
+tagline: Software Developer, Hardware Tinkerer
+url: http://coliniuliano.com
+paginate: 0
+baseurl: ""
+permalink: pretty
 
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _sass
-  style:             :compressed
+  sass_dir: _sass
+  style: :compressed
 
-# About/contact
-author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+# Custom exclude
+  - bin
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Tracking
+# TODO: explore this code ga_analytics: UA-129012824-1
+
+# Custom configuration
+analytics_id: UA-129012824-1
+excerpt_separator: "<!-- more -->"
+collections:
+  projects:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_projects"
+    values:
+      layout: "page-gallery"
 
 # Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/poole/poole
-
-# Exclude
-exclude:
-  - bin
+version: 3.0.0
