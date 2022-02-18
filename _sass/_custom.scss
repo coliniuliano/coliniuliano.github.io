@@ -41,6 +41,7 @@
   float: left;
   margin: 0 1rem 0 0;
   height: 10rem;
+  clip-path: inset(0 0 0 0 round 10px)
 }
 
 .clearfix:after {
@@ -59,5 +60,5 @@
   height: 128px; 
   float: left;
   margin: 0 1rem 0 0;
-  clip-path: circle(52px at center);
+  clip-path: circle(60px at center);
 }

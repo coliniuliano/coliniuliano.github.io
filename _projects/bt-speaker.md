@@ -1,7 +1,8 @@
 ---
 title: Bluetooth "True Wireless Stereo" Speakers
 image: bt-speaker/thumbs/square-front.jpg
-status: In-Progress
+status: Stalled
+date: 2018-01-01
 ---
 
 Designed to experiment with True Wireless Stereo technology, these speakers feature the CSRA62415 audio module and BMR12 drivers wrapped in a modern oak enclosure.  Engineered for high-quality audio in a small form-factor, the signal path remains digital from the Bluetooth/USB input to the amplifier output.  Two speakers can be paired together to provide fully wireless stereo sound.<!-- more -->

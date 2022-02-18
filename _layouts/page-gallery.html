@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {%- include head.html %}
@@ -10,7 +10,7 @@
 
       <main>
           <article class="page">
-            <h1 class="page-title">{{ page.title }}</h1>
+            <h1 class="title">{{ page.title }}</h1>
             {%- for status in page.status %}
             {%- assign status-class = status | split: ":" | last | downcase | strip %}
             <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
@@ -25,12 +25,6 @@
             {{ content | split: site.excerpt_separator | last }}
           </article>
       </main>
-
-      <footer>
-        <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
-        </small>
-      </footer>
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>

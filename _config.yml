@@ -41,13 +41,11 @@ collections:
   projects:
     output: true
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "_projects"
     values:
       layout: "page-gallery"

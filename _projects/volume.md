@@ -2,6 +2,7 @@
 title: Bluetooth Volume Knob
 image: volume/thumbs/led-on.jpg
 status: Completed
+date: 2016-01-01
 ---
 
 Originally an excuse to play with Bluetooth Low Energy and wireless charging, this simple project combines an nRF51822 module with a slick maple base, 3d-printed LED ring, and an anodized aluminum knob.<!-- more -->

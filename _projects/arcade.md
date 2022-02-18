@@ -2,6 +2,7 @@
 title: Countertop Arcade
 image: arcade/thumbs/finished-front.jpg
 status: Completed
+date: 2018-01-01
 ---
 
 Conceived from childish fascination and as an introdution to woodworking, this unique cabinet is based off the WeeCade set of plans and runs thousands of games on a Raspberry Pi.<!-- more -->
