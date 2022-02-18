@@ -1,11 +1,11 @@
 ---
 title: Bluetooth "True Wireless Stereo" Speakers
 image: bt-speaker/thumbs/square-front.jpg
-status: Stalled
+status: Completed
 date: 2018-01-01
 ---
 
-Designed to experiment with True Wireless Stereo technology, these speakers feature the CSRA62415 audio module and BMR12 drivers wrapped in a modern oak enclosure.  Engineered for high-quality audio in a small form-factor, the signal path remains digital from the Bluetooth/USB input to the amplifier output.  Two speakers can be paired together to provide fully wireless stereo sound.<!-- more -->
+Designed to experiment with True Wireless Stereo technology, these speakers feature the CSRA64215 audio module and BMR12 drivers wrapped in a modern oak enclosure.  Engineered for high-quality audio in a small form-factor, the signal path remains digital from the Bluetooth/USB input to the amplifier output.  Two speakers can be paired together to provide fully wireless stereo sound.<!-- more -->
 
 ## Features ##
 * Qualcomm CSRA64215 Bluetooth Audio Module
@@ -29,6 +29,9 @@ The hardware for this project is quite simple since the CSRA64215 module is an a
 [![Schematic]({{ site.baseurl }}/assets/bt-speaker/schematic.png "Schematic")]({{ site.baseurl }}/assets/bt-speaker/schematic.pdf)
 
 ## Woodworking ##
-Each speaker is made of solid oak with contrasting espresso stain.  To ensure perfect fits, many templates were 3D-printed to assist with cutting.  Each speaker design was thoroughly 3D-modelled to guarantee adequate volume and seamless integration.
+Each speaker is made of solid oak with contrasting espresso stain.  To ensure perfect fits, many templates were 3D-printed to assist with cutting.  Each speaker design was thoroughly 3D-modelled to guarantee adequate volume and seamless integration.  Two separate designs were tested, one with round edges and veneer, the other with mitred corners and continuous grain.  The square box ended up being the favourite.
 
 {% include gallery.html id="bt-speaker" gallery="wood" %}
+
+## Results ##
+These speakers worked fairly well most of the time, but suffered with some bass hits and lost connectivity too often for my liking.  The documentation was extremely difficult to translate and the software was difficult to find and use.  Since this project's start, True Wireless support has increased dramatically and Bluetooth 5 came out.  CSR was bought by Qualcomm and a new pin-compatible QCC3008 module was released, which I started to play with, but by that point the project had gone as far as I cared to get it.  I ended up building some wired bookshelf speakers and a subwoofer, so I never ended up using these much beyond playing around.

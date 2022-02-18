@@ -5,7 +5,7 @@ status: Completed
 date: 2018-01-01
 ---
 
-Conceived from childish fascination and as an introdution to woodworking, this unique cabinet is based off the WeeCade set of plans and runs thousands of games on a Raspberry Pi.<!-- more -->
+Inspired by a young admiration of video games and as an introdution to woodworking, this unique cabinet is based off the WeeCade set of plans and runs thousands of games on a Raspberry Pi.<!-- more -->
 
 ## Features ##
 * Gorgeous vinyl side art
