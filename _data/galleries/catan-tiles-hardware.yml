@@ -1,0 +1,8 @@
+- file: breadboard-proto.jpg
+  description: First LCD experiments on the breadboard
+- file: tile-pcb.jpg
+  description: An assembled hex PCB
+- file: programming-jig.jpg
+  description: Pogo pin programming jig with Picoprobe
+- file: programming.jpg
+  description: Initial firmware drawing from flash
