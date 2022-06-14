@@ -53,26 +53,25 @@ At the lowest level, the tiles communicate over a single data line using a modif
 
 There are many considerations when designing a network. For simplicity and reliability, data is relayed through a [flooding broadcast mechanism](https://en.wikipedia.org/wiki/Flooding_(computer_networking)) where each tile has a unique address. The unique address comes from the flash chip itself so there will never be any possible contention. Using a broadcast mechanism (as opposed to a routing mechanism) allows traffic to flow through the network of tiles without any consideration for whether there is an optimal or broken path between tiles. If a tile is abruptly disconnected for example, it should have no impact on the overall network and messages will continue to flow. A broadcast mechanism has its own downfalls too, like [broadcast storms](https://en.wikipedia.org/wiki/Broadcast_storm).
 
-There are two types of message that can be sent through the network: a direct message does not include an address and is meant for the tile that receives it; and a broadcast message which is meant for the tile with a matching address. Tiles receiving a broadcast message will listen for a matching address, and if the address does not match, it will then begin to proxy the message on its other interfaces, creating a mesh network of sorts.
+There are two types of message that can be sent through the network: a _direct message_ does not include an address and is meant for the tile that receives it; and a _broadcast message_ which is meant for the tile with a matching address. Tiles receiving a broadcast message will listen for a matching address, and if the address does not match, it will then begin to proxy the message on its other interfaces, creating a mesh network of sorts.
 
 The basic protocol works as follows:
+
 - The host device receives a trigger to probe/configure the board (typically a button press)
-- The host device (H) sends a direct message to the tile it is attached to (T1), asking for that tile's ID
-- T1 responds directly to the host H with its tile ID
-- Host H is now aware of T1 by its ID
-- Host H broadcasts a message to T1 to perform a "neighbour check"
-- T1 sends a direct message to each of its 5 remaining interfaces (T2-T6), asking for those tiles' IDs
-- T2-T6 respond directly to T1 with their tile IDs
-- T1 is now aware of the tiles that surround it and which interface (side) they are physically on
-- T1 broadcasts a response to H describing the tiles surrounding it
-- H is now aware of T2-T6 and their position relative to T1
-- The cycle continues, host H broadcasts a message to T2 to perform a "neighbour check"
+- The host device (H) sends a direct message to the tile it is attached to (T1), asking for that tile's ID. T1 responds directly to the host H with its tile ID. ![Protocol Step 1](/assets/catan-tiles/protocol/protocol-1.svg){: width="40%" }
+- Host H is now only aware of Tile 1. H broadcasts a message to T1 to perform a "neighbour check". ![Protocol Step 2](/assets/catan-tiles/protocol/protocol-2.svg){: width="40%" }
+- T1 sends a direct message to each of its 5 remaining interfaces (T2-T6), asking for those tiles' IDs. T2-T6 respond directly to T1 with their tile IDs. In this example, Tiles 2 and 3 respond.
+![Protocol Step 3](/assets/catan-tiles/protocol/protocol-3.svg){: width="40%" }
+- T1 is now aware of the tiles that surround it and which interface (side) they are physically on. T1 broadcasts a response to H describing the tiles surrounding it. Note that Tiles 2 and 3 will both receive the broadcast intended for the Host, and they will continue to broadcast it through the network until all nodes have received the message.
+![Protocol Step 4](/assets/catan-tiles/protocol/protocol-4.svg){: width="40%" }
+- H is now aware of T2-T6 and their position relative to T1. The cycle continues, host H broadcasts a message to T2 to perform a "neighbour check". The message will be broadcast to Tile 1, which will rebroadcast the message onto its other interfaces since it is not the intended recipient.
+![Protocol Step 5](/assets/catan-tiles/protocol/protocol-5.svg){: width="40%" }
 - Once the host H has identified all the tiles, it generates a board
 - Once a board is configured, host H broadcasts a message to each tile and tells it what resource and number to display
 
 ## Results ##
 
-This project went surprisingly smooth! There were many learning opportunities and struggles but the project was generally fun from start to "finish". The tiles work really well and the communication is fairly reliable. I need to work on the mesh networking aspect before the tiles can generate a proper game board, but that's a task for another time since I've accomplished as much as I care to for now.
+This project went surprisingly well! There were many learning opportunities and struggles but the project was generally fun from start to "finish". The tiles work really well and the communication is fairly reliable. I need to work on the mesh networking aspect before the tiles can generate a proper game board, but that's a task for another time since I've accomplished as much as I care to for now.
 
 {% include gallery.html id="catan-tiles" gallery="results" %}
 
