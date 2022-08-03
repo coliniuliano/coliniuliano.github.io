@@ -17,7 +17,7 @@ While powered gloves are the main focus of this project, a control box was also 
 
 ### Gloves ###
 
-The gloves used in this project are just some basic glove liners from Amazon, made mostly from Polyester and some Spandex.  The heated fabric is some 15mm (Viscose) "Carbon Fiber" heating tape that was purchased online.  Some research indicated that average heated gloves output approximately 7.5W per hand, and with a nominal battery voltage of 7.4V (two lithium batteries in parallel), the tape needed a resistance of  per hand.  Given a claimed resistance of ~18Ω/m, a strip of around 48" was used and powered from the center to behave like two 24" heating elements in parallel.  Wires were attached to the conductive fabric using silver glue and then sewn in for maximum durability.
+The gloves used in this project are just some basic glove liners from Amazon, made mostly from Polyester and some Spandex.  The heated fabric is some 15mm "Carbon Fiber" heating tape that was purchased online.  Some research indicated that average heated gloves output approximately 7.5W per hand, and I had two lithium batteries in parallel for a nominal voltage of 7.4V.  Given a claimed resistance of ~18Ω/m, a strip of around 48" was used and powered from the center to behave like two 24" heating elements in parallel.  Wires were attached to the conductive fabric using silver glue and then sewn in for maximum durability.
 
 The heating fabric was simply glued down to the gloves using some waterproof Goop adhesive since everything else peeled off with little effort.  This was the only adhesive that remained flexible and allowed the fabrics to stretch with a closed fist.
 
