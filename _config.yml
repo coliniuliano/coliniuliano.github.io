@@ -35,7 +35,7 @@ sass:
   style: :compressed
 
 # Custom configuration
-ga_analytics: UA-129012824-1
+ga_analytics: G-YZ4KD50JPT
 excerpt_separator: "<!-- more -->"
 collections:
   projects:
