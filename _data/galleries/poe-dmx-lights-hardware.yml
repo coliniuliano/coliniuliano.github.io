@@ -1,0 +1,12 @@
+- file: pcb-1-render.jpg
+  description: Jack board, where the Ethernet cable lands
+- file: pcb-2-render.jpg
+  description: Controller board
+- file: pcb-3-render.jpg
+  description: Power board
+- file: enclosure-3d-cross-section.jpg
+  description: Cross-section of the 3D printed enclosure
+- file: pcb-stack-final.jpg
+  description: The three boards assembled into a stack
+- file: pcb-stack-enclosure.jpg
+  description: Assembled stack in the printed enclosure
