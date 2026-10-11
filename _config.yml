@@ -1,7 +1,7 @@
 # Setup
 title: Colin Iuliano
 tagline: Software Developer, Hardware Tinkerer
-url: http://coliniuliano.com
+url: https://www.coliniuliano.ca
 # paginate: 0
 baseurl: ""
 permalink: pretty
@@ -29,10 +29,6 @@ exclude:
   - README.md
 # Custom exclude
   - bin
-
-sass:
-  sass_dir: _sass
-  style: :compressed
 
 # Custom configuration
 ga_analytics: G-YZ4KD50JPT

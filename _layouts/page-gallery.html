@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {%- include head.html %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/css/lightbox.min.css">
   </head>
   <body>
     <div class="container content">
@@ -12,7 +12,7 @@
           <article class="page">
             <h1 class="title">{{ page.title }}</h1>
             {%- for status in page.status %}
-            {%- assign status-class = status | split: ":" | last | downcase | strip %}
+            {%- assign status-class = status | split: ":" | last | downcase | strip | replace: " ", "-" %}
             <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
             {%- endfor -%}
 
@@ -27,6 +27,6 @@
       </main>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

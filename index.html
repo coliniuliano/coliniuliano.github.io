@@ -18,7 +18,7 @@
       {%- endif %}
 
       {%- for status in project.status %}
-      {%- assign status-class = status | split: ":" | last | downcase | strip %}
+      {%- assign status-class = status | split: ":" | last | downcase | strip | replace: " ", "-" %}
       <span class="progress-pill pill-{{ status-class }}">{{ status }}</span>
       {%- endfor -%}
 

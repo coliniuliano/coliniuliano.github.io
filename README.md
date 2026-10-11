@@ -1,92 +1,121 @@
-# Poole
+# coliniuliano.ca
 
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+Personal site and project portfolio, built with [Jekyll](https://jekyllrb.com) and
+deployed by Cloudflare Pages. Based on the [Poole](https://github.com/poole/poole) theme,
+heavily modified.
 
------
+## Running locally
 
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
-
-![Poole](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
-
-See Poole in action with [the demo site](https://demo.getpoole.com).
-
-There are currently two official themes built on Poole:
-
-* [Hyde](https://hyde.getpoole.com)
-* [Lanyon](https://lanyon.getpoole.com)
-
-Individual theme feedback and bug reports should be submitted to the theme's individual repository.
-
-
-## Contents
-
-- [Usage](#usage)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
-
-
-## Usage
-
-### 1. Install dependencies
-
-Poole is built on Jekyll and uses its built-in SCSS compiler to generate our CSS. Before getting started, you'll need to install the Jekyll gem and related dependencies:
+Needs Ruby 3.2 or newer (Jekyll 4.4 pulls in `sass-embedded`, which requires it). Stick to
+3.4.x: that is the only line Jekyll's own CI tests, and it matches what Cloudflare's build
+image uses.
 
 ```bash
-$ gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag
+bundle install
+bundle exec jekyll serve
 ```
 
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
+The site is served at <http://localhost:4000> and rebuilds on file changes (restart after
+editing `_config.yml`). Output goes to `_site/`, which is gitignored.
 
-**Need syntax highlighting?** Poole includes support for Pygments or Rouge, so install your gem of choice to make use of the built-in styling. Read more about this in the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting).
+## Hosting
 
-### 2a. Quick start
+Live at <https://www.coliniuliano.ca> (coliniuliano.com redirects there), published by
+**Cloudflare Pages**, set up in May 2022 — the `Gemfile` was added for that build (commit
+`dc3d41b`). Which branch it watches, the build command, and the Ruby version all live in
+the Cloudflare dashboard rather than in this repo, so a Jekyll or Ruby bump here needs the
+dashboard to keep up. Cloudflare injects its own analytics beacon into every page; Google
+Analytics comes from `ga_analytics` in `_config.yml`.
 
-To help anyone with any level of familiarity with Jekyll quickly get started, Poole includes everything you need for a basic Jekyll site. To that end, just download Poole and start up Jekyll.
+`baseurl` is empty because the site sits at the domain root. `url` is informational only —
+nothing in the templates uses it.
 
-### 2b. Roll your own Jekyll site
+GitHub Pages is also still switched on for the repo, serving an older copy of the same
+content at <https://coliniuliano.github.io>. Nothing points at it. The `gh-pages` branch is
+a leftover from the Poole fork and is unused.
 
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Poole and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `assets/` for CSS, JS, etc.).
+## Structure
 
-### 3. Running locally
-
-To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/poole` (or whatever your Jekyll site's root directory is named):
-
-```bash
-$ jekyll serve
+```
+index.html              Home page: all projects grouped by year, newest first
+404.html
+_config.yml             Site settings, collections, layout defaults
+_projects/              One Markdown file per project (the `projects` collection)
+_data/galleries/        Image lists for the gallery include, one YAML file per gallery
+_layouts/               default.html, page-gallery.html
+_includes/              head.html, masthead.html, gallery.html
+_sass/                  Partials imported by styles.scss
+styles.scss             Compiled to styles.css by Jekyll's built-in Sass
+assets/                 Per-project image folders (plus thumbs/), favicon, headshot
+bin/                    Image resizing and thumbnail scripts
 ```
 
-Open <http://localhost:4000> in your browser, and voilà.
+## Adding a project
 
-### 4. Serving it up
+Create `_projects/<slug>.md`. Pages in `_projects` get the `page-gallery` layout
+automatically, so only front matter and content are needed:
 
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+```markdown
+---
+title: Electronic Catan LCD Tiles
+image: catan-tiles/thumbs/four-tiles.png
+status: Completed
+date: 2022-01-01
+---
 
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/poole`, use `http://username.github.io/poole/`. **Be sure to include the trailing slash.**
-3. Done! Head to your GitHub Pages URL or custom domain.
+Short intro shown as the excerpt on the home page.<!-- more -->
 
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+The rest of the write-up.
+```
 
-## Development
+- `image` is a path under `assets/`, usually a thumbnail.
+- `status` is rendered as a pill; `In Progress`, `Completed`, `Stalled`, and `Cancelled`
+  have styles in `_sass/_custom.scss` (the class is the value lowercased and hyphenated).
+  It can also be a list to show multiple pills.
+- `date` only drives the year heading and sort order on the home page.
+- `<!-- more -->` (`excerpt_separator`) splits the home page excerpt from the full write-up.
 
-Poole has two branches, but only one is used for active development.
+## Galleries
 
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+Drop images in `assets/<project>/`, generate thumbnails into `assets/<project>/thumbs/`,
+then list them in `_data/galleries/<project>-<gallery>.yml`:
 
-CSS is handled via Jeykll's built-in Sass compiler. Source Sass files are located in `_sass/`, included into `styles.scss`, and compile to `styles.css`.
+```yaml
+- file: tile-pcb.jpg
+  description: An assembled hex PCB
+```
 
-## Author
+Include it in a project page with:
 
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
+```liquid
+{% include gallery.html id="catan-tiles" gallery="hardware" %}
+```
 
+`id` is the `assets/` folder; `gallery` is the suffix on the data file name and can be
+omitted for a single gallery at `_data/galleries/<project>.yml`. Thumbnails link to the full-size image in a
+lightbox.
+
+### Image prep
+
+`bin/` holds helpers that need [ImageMagick](https://imagemagick.org)
+(`brew install imagemagick`). They can be run from anywhere, and both default to every
+`assets/<project>/` folder, or take specific folders as arguments:
+
+- `bin/resize-and-strip.sh` — caps images at 1280px and strips embedded profiles, in place
+- `bin/create-thumbnails.sh` — writes 250x250 thumbnails into `assets/<project>/thumbs/`
+
+Both only rewrite files that actually need it, so re-running them leaves everything else
+byte-identical and git stays quiet. `DRY_RUN=1` reports without writing anything.
+
+Thumbnail output is not stable across ImageMagick versions, so an existing thumbnail is
+never rebuilt just because its source has a newer timestamp. Use `STALE=1` after replacing
+a source image, or `FORCE=1` to rebuild the lot. `create-thumbnails.sh` also lists
+thumbnails whose source image is gone.
+
+`bin/generate-thumbnails.bat` is an old Windows version of both scripts, unmaintained and
+not idempotent.
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+Poole is MIT licensed; see [LICENSE.md](LICENSE.md). Site content and project write-ups are
+not.
