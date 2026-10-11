@@ -30,9 +30,11 @@ Analytics comes from `ga_analytics` in `_config.yml`.
 `baseurl` is empty because the site sits at the domain root. `url` is informational only —
 nothing in the templates uses it.
 
-GitHub Pages is also still switched on for the repo, serving an older copy of the same
-content at <https://coliniuliano.github.io>. Nothing points at it. The `gh-pages` branch is
-a leftover from the Poole fork and is unused.
+GitHub hosts the git repo only. GitHub Pages used to serve a second, stale copy of the
+site, which was impossible to switch off while the repo was named `coliniuliano.github.io`
+(GitHub always publishes user sites from the default branch). Renaming the repo to
+`website` turned that into an ordinary project site, which could then be disabled, so
+coliniuliano.github.io now returns 404. The Poole fork's `gh-pages` branch is gone too.
 
 ## Structure
 
